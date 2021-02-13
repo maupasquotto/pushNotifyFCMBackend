@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  pushnotify:
+    build:
+      context: '.'
+    container_name: fcmb
+    environment:
+      - APACHE_RUN_USER=#1000
+      - APACHE_RUN_GROUP=#1000
+      - XDEBUG_CONFIG="remote_host=host.docker.internal"
+    volumes:
+      - ../:/var/www/html
+      - ./php.ini:/usr/local/etc/php/php.ini
+    ports:
+      - 8090:80

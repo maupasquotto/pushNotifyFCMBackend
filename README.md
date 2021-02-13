@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/maupasquotto/pushNotifyFCMBackend.git` this repository
 * `cd pushNotifyFCMBackend`
 * `composer install`
 
@@ -22,6 +22,9 @@ You will need the following things properly installed on your computer.
 
 * `Ubiquity serve`
 * Visit your app at [http://127.0.0.1:8090](http://127.0.0.1:8090).
+
+## Docker
+`./docker/runBuild.sh` run a docker for dev
 
 ### devtools
 
